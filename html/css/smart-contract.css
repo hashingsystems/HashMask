@@ -1,0 +1,34 @@
+#hedera .col-12 #accept {
+  width: 40%;
+}
+
+#hedera .col-12 #deny {
+  width: 40%;
+}
+
+#hedera #sc-btn-group {
+  width: 200px;
+  margin-top: 10px;
+  /* overflow-y: scroll; */
+}
+
+#hedera #params {
+  border-bottom: 1px solid whitesmoke;
+  overflow-y: scroll;
+  max-height: 125px;
+}
+
+#hedera #amountTextTinybar,#amountTextDollar{
+  display: none;
+}
+#hedera #amountCost{
+  display: none;
+}
+
+#hedera #amount-tinybar-value,#amount-dollar-value{
+  display: none;
+}
+
+#hedera #amount-cost{
+  display: none;
+}

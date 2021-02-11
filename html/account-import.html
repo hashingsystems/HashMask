@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ACCOUNT IMPORT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/notification.css" />
+    <link rel="stylesheet" type="text/css" href="css/hedera.css" />
+    <link rel="stylesheet" type="text/css" href="css/account-import.css" />
+    <script src="../javascript/account-import.js"></script>
+</head>
+
+<body id="hedera">
+    <div class="container account-import">
+        <div class="row top pb-4 pt-2">
+            <div class="back-btn" id="back-btn">
+                <img src="./images/back-button (1).svg" id="back-btn-image" />
+            </div>
+            <div class="top col-12">
+                <img class="rounded-circle" src="images/Icon-Hbar-White.png" alt="" width="35" height="35" />
+            </div>
+            <div class="col-12 pt-3">
+                <p id="title" class="title"></p>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="row content fixed">
+            <!-- single column -->
+            <div class="col-12 content-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="mnemonic-txt"></div>
+                    </div>
+                    <div class="col-12 accountid-field">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="accountid-value"
+                                placeholder="Account Id"></input>
+                        </div>
+                    </div>
+                    <div class="col-12 login-btn">
+                        <div class="form-group">
+                            <button class="btn btn-normal btn-block form-control" id="getAccountBalanceButton">
+                                <span id="buttonCompletePairingText"></span>
+                                <img src="" data-src="" alt="" width="16px" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ACCOUNT CREATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/notification.css" />
+    <link rel="stylesheet" type="text/css" href="css/hedera.css" />
+    <link rel="stylesheet" type="text/css" href="css/account-generate.css" />
+    <script src="../javascript/account-generate.js"></script>
+</head>
+
+<body id="hedera">
+    <div class="container">
+        <div class="back-btn" id="back-btn">
+            <img src="./images/back-button (1).svg" id="back-btn-image" />
+        </div>
+        <div class="row top pb-4 pt-2">
+            <div class="top col-12">
+                <img class="rounded-circle" src="images/Icon-Hbar-White.png" alt="" width="35" height="35" />
+            </div>
+            <div class="col-12 pt-3">
+                <p id="title" class="title"></p>
+            </div>
+        </div>
+
+        <div class="row" id="title-block">
+            <div class="col-12" id="title-txt">
+            </div>
+        </div>
+
+        <div class="row" id="mnemonic-block">
+            <div class="col-12 form-group input-block">
+                <label id="mnemonic-label"></label>
+                <textarea class="form-control" id="mnemonic" rows="5" cols="35" readonly></textarea>
+                <div id="text-copied" class="text-copied">Phrase Copied !</div>
+            </div>
+        </div>
+
+        <div class="row" id="confirm-mnemonic-block">
+        </div>
+
+        <div class="row" id="btn-block">
+            <div class="col-12 common-btn">
+                <div class="form-group">
+                    <button class="btn btn-normal form-control" id="action-btn">
+                        <span id="actionButtonText"></span>
+                        <img src="" data-src="" alt="" width="16px" />
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/notification.css" />
+    <link rel="stylesheet" type="text/css" href="css/hedera.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <style>
+    .shark-left {
+            -moz-transform: scaleX(1);
+            -o-transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+    }
+    .shark-right {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+    }
+    #bee {
+        transition: transform .1s;
+        z-index:10000;
+    }
+    </style>
+    <script src="../javascript/login.js"></script>
+</head>
+
+<body id="hedera">
+    <div id="bee"> 
+      <img src="images/shark.png"   />
+    </div>
+    <div class="container login">
+        <div class="row top pb-4 pt-2">
+            <button class="btn btn-normal btn-block hidden" type="button" id="top-hlp">HELP</button>
+        </div>
+        <!-- content -->
+        <div class="row content fixed">
+            <!-- single column -->
+            <div class="col-12 welcome-container">
+                <img class="banner-logo ml-1" src="images/hashing-system-logo.png" alt="" width="40%" />
+                <div class="banner-header" id="local-threshold">
+                    Welcome back!
+                </div>
+                <div class="banner-tagline">
+                    Enter your password
+                </div>
+                <div class="row">
+                    <div class="col-12 password-field">
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password-value" rows="1"
+                                placeholder="Password"></input>
+                        </div>
+                    </div>
+                    <div class="col-12" id="password-msg"></div>
+                    <div class="col-12 login-btn">
+                        <button class="form-control btn btn-normal btn-block disabled" id="access-btn">Access</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>GENERATE KEY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/notification.css" />
+    <link rel="stylesheet" type="text/css" href="css/hedera.css" />
+    <link rel="stylesheet" type="text/css" href="css/generate-key.css" />
+    <script src="../javascript/generate-key.js"></script>
+</head>
+
+<body id="hedera">
+    <div class="container generate-key">
+        <div class="row top pb-4 pt-2">
+            <div class="top col-12">
+                <img class="rounded-circle" src="images/Icon-Hbar-White.png" alt="" width="35" height="35" />
+            </div>
+            <div class="col-12 pt-3">
+                <p id="title" class="title"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 switch-block">
+                <label class="switch">
+                    <div id="toggle-leftTxt"></div>
+                    <input type="checkbox" id="toggleBtn">
+                    <span class="slider round"></span>
+                    <div id="toggle-rightTxt"></div>
+                </label>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="row content fixed">
+            <!-- single column -->
+            <div class="col-12 common-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="common-txt"></div>
+                    </div>
+                    <div class="col-12 common-field">
+                        <div class="form-group">
+                            <textarea class="form-control" id="input-value" rows="5" cols="35"></textarea>
+                        </div>
+                    </div>
+                    <div id="mnemonic-fields" class="row">
+                    </div>
+                    <div class="col-12 login-btn">
+                        <div class="form-group">
+                            <button class="btn btn-normal btn-block form-control" id="generate-btn"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+#hedera #recent-transactions ul {
+  font-size: 60%;
+  font-weight: lighter;
+  display: block;
+  list-style: none;
+  overflow-y: auto;
+  max-height: 290px;
+  padding-left: 10px;
+}
+
+#hedera #recent-transactions ul li {
+  padding: 10px 4px;
+  border-bottom: 1px solid #979797;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#
+
+#hedera #recent-transactions span {
+  /* display: inline-block;
+  width: 20%; */
+  vertical-align: middle;
+  text-align: center;
+}
+
+#hedera #recent-transactions li img{
+  width: 17px;
+  height: 22px;
+  object-fit: contain;
+}
+
+#hedera #recent-transactions-detail {
+  display: none;
+}
+li.transac-item:hover {
+    background: rgba(29, 60, 90, 0.79);
+    cursor: context-menu;
+}

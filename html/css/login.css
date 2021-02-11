@@ -1,0 +1,51 @@
+#hedera .login .welcome-container{
+    
+}
+.banner-tagline {
+
+}
+
+#hedera .login .banner-logo{
+    padding-top: 40px;
+}
+
+#hedera .login .banner-header{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#hedera .login .password-field{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#hedera #password-msg{
+    margin-top: -7px;
+    font-style: italic;
+    font-size: 12px;
+    color: #ef5c5c;
+}
+
+#hedera .login .password-field #password-value{
+    width:200px;
+}
+
+#hedera .login .login-btn{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#hedera .login .login-btn #access-btn{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    padding: 12px !important;
+}
+button#top-hlp {
+    width: 70px;
+    right: 20px;
+    position: fixed;
+    top: 10px;
+}

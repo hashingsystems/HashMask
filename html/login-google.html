@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Account Begin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/hedera.css" />
+    <link rel="stylesheet" type="text/css" href="css/notification.css" />
+    <link rel="stylesheet" type="text/css" href="css/account-begin.css" />
+    <script src="../javascript/login-google.js"></script>
+</head>
+
+<body id="hedera">
+    <div class="container" style="display: flex; flex-direction: column; justify-content: space-between">
+        <div class="row top pb-4 pt-2">
+            <div class="back-btn" id="back-btn">
+                <img src="./images/back-button (1).svg" id="back-btn-image" />
+            </div>
+            <div class="top col-12">
+                <img class="rounded-circle" src="images/Icon-Hbar-White.png" alt="" width="35" height="35" />
+            </div>
+            <div class="col-12 pt-3">
+                <p id="title" class="title"></p>
+            </div>
+        </div>
+        <div class="checklist">
+                <ul class="checklist__list">
+                    <h6 id="message-top">In order for us to create an account for you we need to verify your web identity with Google. You agree that:</h6>
+                    <li class="checklist__item" id="checklist1">
+                        <input type="checkbox" name="checkbox01" id="checkbox01" class="checklist__checkbox">
+                        <label for="checkbox01" class="checklist__label" id="checklabel01">
+                            <span class="checklist__text">
+                                <span class="checklist__title">Use your Google account to verify your web presence</span>
+                            </span>
+                        </label>
+                    </li>
+                    <li class="checklist__item" id="checklist2">
+                        <input type="checkbox" name="checkbox02" id="checkbox02" class="checklist__checkbox">
+                        <label for="checkbox02" class="checklist__label" id="checklabel02">
+                            <span class="checklist__text">
+                                <span class="checklist__title">Receive emails related to your account</span>
+                            </span>
+                        </label>
+                    </li>
+                    <li class="checklist__item" id="checklist3">
+                        <input type="checkbox" name="checkbox03" id="checkbox03" class="checklist__checkbox">
+                        <label for="checkbox03" class="checklist__label" id="checklabel03">
+                            <span class="checklist__text">
+                                <span class="checklist__title">Composer does not store any data related to private keys. If you delete it, there isn't a backup.</span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        <div class="row">
+            <button id="loginGoogle" class="btn btn-normal btn-block">
+                Login With Google
+            </button>
+            <div id="error" class="error"></div>
+        </div>
+        <div class="row"></div>
+    </div>
+</body>
+
+</html>

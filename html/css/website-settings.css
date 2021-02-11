@@ -1,0 +1,113 @@
+#hedera #website-list ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hedera #website-list{
+  overflow: auto;
+  height:295px;
+}
+
+#hedera #website-list ul li {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #15314c;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom:10px;
+  cursor: default;
+}
+
+#hedera #website-list ul li .item-header{
+  margin-left: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.item-header img{
+  width: 15px;
+  margin-right: 9px;
+  opacity:0.6;
+}
+
+.item-header .website{
+  word-break: break-all;
+}
+
+#website-list ul li .website-fields{
+  width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.website-fields .field input{
+  width: 100px;
+  height: 25px;
+  background: #1c3d5a;
+  border: 0px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  color: #3991ad;
+}
+
+.limitDollars-field::before{
+  content: '$';
+  padding-right: 2px;
+}
+
+.limitHbars-field::before{
+  content: 'ℏ';
+  padding-right: 2px;
+}
+
+#website-add{
+  padding-bottom: 10px;
+}
+
+#website-add img{
+  width:20px;
+  opacity: 0.6;
+}
+
+#website-add .add-website-icon{
+  cursor: pointer;
+}
+
+#website-add .add-website-icon:hover{
+  opacity: 1;
+}
+
+#website-add #website-add-input{
+  width: 200px;
+  height: 30px;
+  background: #1c3d5a;
+  border: 0px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  color:#fff;
+}
+
+
+
+
+/* #hedera #recent-transactions-detail {
+  display: none;
+}
+li.transac-item:hover {
+    background: rgba(29, 60, 90, 0.79);
+    cursor: context-menu;
+} */

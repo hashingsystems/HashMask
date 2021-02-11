@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Account Overview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/notification.css" />
+    <link rel="stylesheet" type="text/css" href="css/hedera.css" />
+    <link rel="stylesheet" type="text/css" href="css/account-overview.css" />
+    <script src="../javascript/account-overview.js"></script>
+</head>
+
+<body id="hedera">
+    <div class="container">
+
+        <div class="header-container">
+            <img class="rounded-circle ml-1" src="images/Icon-Hbar-White.png" alt="" width="35" height="35" />
+
+            <p class="col-10 pt-2 mt-1 pl-3 title text-left" id="accountOverviewText" style="display:none"></p>
+
+            <div class="right-section">
+                <div class="network-container">
+                    <div class="network-icon"></div>
+                    <div class="network-text" id="selectedNetwork">
+                    </div>
+                    <img class="network-down-arrow" src="./images/transfer.svg">
+                </div>
+
+                <div class="profile-container">
+                    <div class="profile-image-block" id="profile-img">
+                        <div class="profile-img-circle">
+                            <img class="profile-img" src="./images/user.svg" />
+                        </div>
+                    </div>
+                    <div class="profile-menu-block" id="profile-menu">
+                        <div class="row" id="menu"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item-txt" id="add-account"></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="menu-item-txt" id="export-wallet"></div>
+                            </div>
+                            <!-- <div class="col-12">
+                                        <div class="menu-item-txt" id="import-wallet"></div>
+                                    </div> -->
+                        </div>
+                    </div>
+                    <div id="profile-menu-overlay"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- content -->
+        <div class="row content fixed">
+            <!-- single column -->
+            <div class="col-12">
+                <!-- row starts -->
+                <div class="row">
+                    <div class="circlecontent text-center">
+                        <p class="amount">
+                            <span id="currentBalanceDollars">Initializing...</span>
+                        </p>
+                        <p class="extra">
+                            <span id="currentBalanceHBars">Wallet</span>
+                        </p>
+                        <p class="balance" id="balanceText"></p>
+                    </div>
+                </div>
+                <!-- row ends -->
+                <!-- row starts -->
+                <div class="row threshold" id="local-threshold">
+                    <div class="col-6 hedera-info" id="domainThresholdText"></div>
+                    <div class="col-6">
+                        <div class="pill-amount">
+                            <div>
+                                <span>$</span>
+                                <input type="number" min="0" id="localThresholdDollars" />
+                            </div>
+                        </div>
+                        <div class="extra">
+                            <span id="localThresholdBars">0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user navigation -->
+            <div class="row menubottom fixed-bottom">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <ul>
+                        <li class="active">
+                            <a href="account-overview.html"><img src="images/icon-home.png" alt="" width="15px" /></a>
+                        </li>
+                        <li>
+                            <a href="account-settings.html"><img src="images/icon-settings.png" alt=""
+                                    width="17px" /></a>
+                        </li>
+                        <li>
+                            <a href="recent-transactions.html"><img src="images/icon-transactions.png" alt=""
+                                    width="16px" /></a>
+                        </li>
+                        <!-- 
+                        <li>
+                            <a href="smart-contract.html"><img src="images/icon-contract.png" alt="" width="16px" /></a>
+                        </li>
+                       <li class="active">
+                            <a href="smart-contract-details.html"><img src="images/sc.jpeg" alt="" width="16px" /></a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <button class="button" href="#" id="getAccountBalanceButton">
+                        <img src="images/icon-refresh.png" data-src="images/icon-refresh.png" alt="" width="16px" />
+                    </button>
+                </div>
+            </div>
+            <div class="row" id="footerlink-row">
+                <div class="col-12">Visit
+                    <a id="footer-link" href="https://myhbartokens.com">
+                        myhbartokens.com
+                    </a>to <br />send HBAR between accounts
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

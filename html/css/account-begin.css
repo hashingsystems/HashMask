@@ -1,0 +1,239 @@
+#hedera .fixed-bottom {
+  right: 30px;
+  left: 30px;
+  bottom: 12px;
+}
+
+#hedera #portal {
+  text-align: center;
+  font-size: 12px;
+}
+
+#hedera #portalLink{
+  color:#007BFF;
+  font-size: 14px;
+}
+
+#hedera .container{
+  padding-top: 14px;
+}
+
+li.checklist__item {
+    list-style-type: none;
+}
+
+.checklist{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.checklist-div {
+  width: 460px;
+}
+.checklist-div div:first-child {
+  background-color: #8cddfe;
+  height: 61px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #193f4f;
+  text-align: center;
+  line-height: 61px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+[type='checkbox']:not(:checked) + .checklist__label.error::before {
+    background: #B94A48 !important;
+}
+.checklist ul li:nth-child(even) {
+  background: #fbfdfe;
+}
+.checklist__header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e6e6e6;
+  flex-grow: column;
+}
+.checklist__heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #343534;
+  margin: 0;
+}
+.checklist__list {
+  padding: 0px;
+  list-style-type: none;
+}
+.checklist__checkbox {
+  display: none;
+}
+.checklist__checkbox + .checklist__label::before {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  min-height: 24px;
+  content: "";
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid #ececec;
+  border-radius: 0.25rem;
+  outline: 0;
+  background-color: transparent;
+}
+.checklist__checkbox + .checklist__label::after {
+    position: absolute;
+    top: 0px;
+    left: 9px;
+    display: block;
+    width: 7px;
+    height: 15px;
+    content: "";
+    transition: all 0.2s ease-in-out;
+    transform: rotate(45deg);
+    border: solid transparent;
+    border-width: 0 3px 3px 0;
+}
+.checklist__checkbox:checked + .checklist__label::before {
+  border-color: #46d998;
+  background-color: #46d998;
+}
+.checklist__checkbox:checked + .checklist__label::after {
+  border-color: #236a4b;
+}
+.checklist__label {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+.checklist__description {
+  font-size: 13px;
+  color: #777;
+}
+.checklist__text {
+  height: 40px;
+  margin-left: 13px;
+  font-size: 14px;
+  line-height: 1.64;
+  color: #88909a;
+}
+.checklist__item {
+  cursor: pointer;
+  margin-left: 10px;
+}
+li.checklist__item {
+    text-align: left;
+}
+.row.top.pb-4.pt-2 {
+    padding-bottom: 0 !important;
+}
+.checklist__list>h6 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.or-txt{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size:12px ;
+
+  /* TODO: REMOVE */
+  /* transform: scale(.8);
+  padding-top: 0px; */
+
+}
+
+.btn#generate-key{
+  margin-top: 0px!important;
+}
+button#top-btn {
+    width: 100px;
+    height: auto;
+    left: 15px;
+    position: fixed;
+    top: 10px;
+    z-index: 1000000000;
+}
+
+button.btn{
+      /* TODO: REMOVE */
+      margin-bottom: 10px;
+      /* transform: scale(.8); */
+}
+
+button#top-btn.hidden {
+    display: none;
+}
+
+#create-btn-msg{
+  font-family: 'Styrene30, Helvetica, Arial, Verdana, Tahoma, sans-serif';
+  margin-top: -6px;
+  padding-bottom: 5px;
+  padding-top: 4px;
+  font-size: 11px;
+  font-style: italic;
+  color: rgb(247, 219, 14);
+}
+
+.btn-normal.disable{
+  opacity:0.6;
+  pointer-events: none;
+}
+
+#hedera #hs-logo{
+  position: fixed;
+  top: 62px;
+  left: 22px;
+}
+
+.top-section{
+  display: flex;
+  justify-content: center;
+}
+
+
+.top-section .network-container{
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgba(97, 97, 97, 0.4);
+  border-radius: 30px;
+  width: 170px;
+  padding: 4px;
+  cursor: pointer;
+  transition: background-color .5s;
+  background-size: 0% 100%;
+}
+
+.top-section .network-container:hover{
+  background-color:#193856;
+  background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.7) 100%);
+  background-repeat:no-repeat;
+  background-size: 200% 100%; 
+  transition:background-size 1s, background-color 1s;
+
+}
+
+.network-icon{
+  width: 8px;
+  height: 8px;
+  background: chartreuse;
+  border-radius: 50%;
+}
+
+.network-text{
+  font-size: 12px;
+  /* font-size: 10px; */
+}
+
+.network-container .network-down-arrow{
+  /* height: 10px; */
+  height: 16px;
+}
